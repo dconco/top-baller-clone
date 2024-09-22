@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         Barlow: 'Barlow',
-        BarlowSemiCondensed: 'Barlow Semi Condensed'
+        BarlowSemiCondensed: 'Barlow Semi Condensed',
+        inter: 'Inter',
+        cardo: 'Cardo'
       }
     }
   },

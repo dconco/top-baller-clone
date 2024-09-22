@@ -8,7 +8,7 @@
 		<title>Home - Top Baller</title>
 	</head>
 
-	<body class="h-screen selection:bg-red-500">
+	<body class="h-screen selection:bg-red-500 bg-[#140303]">
 		<header class="w-full lg:h-28 p-3.5 bg-black">
 			<div class="flex items-center justify-between h-full lg:px-10">
 				<div class="h-20 lg:h-full">
@@ -110,18 +110,18 @@
 			</a>
 		</div>
 
-		<!-- MAIN -->
-		<div class="relative inset-0 lg:h-[calc(100%-7rem)] h-[calc(100%-11rem)]">
+		<!-- MAIN COVER -->
+		<div class="relative inset-0 h-[calc(100%-7rem)]">
 			<div class="absolute inset-0 bg-cover bg-center"
 				style="background: no-repeat center center url('/assets/cover.webp'); background-size:cover"></div>
 			<div class="absolute inset-0 bg-black opacity-50"></div>
 
 			<div
-				class="relative h-full z-10 flex flex-col justify-around items-center text-center gap-5 pt-10">
+				class="relative h-full z-10 flex flex-col justify-center items-center text-center gap-5">
 				<object data="./assets/dark-bg.svg" type="image/svg+xml"
-					class="max-h-[60%]"></object>
-				<div class="min-h-[20%] mt-5">
-					<span class="font-BarlowSemiCondensed text-white text-2xl text-center">
+					class="h-[60%] max-w-[70%]"></object>
+				<div class="min-h-[20%] md:mt-5">
+					<span class="font-BarlowSemiCondensed text-white text-3xl text-center">
 						YOU SAY YOU'RE A TOP BALLER. PROVE IT. END THE TALKING.
 					</span>
 					<br>
@@ -136,6 +136,38 @@
 					</a>
 				</div>
 			</div>
+		</div>
+
+		<div class="mt-12 text-center mx-auto">
+			<span class="uppercase font-BarlowSemiCondensed text-white text-2xl">
+				Never miss any of the action and find out about events first. Follow us on
+				our socials:
+			</span>
+
+			<div class="mt-10 flex gap-3 justify-center">
+				<a href="https://www.instagram.com/top_ballergram">
+					<iconify-icon icon="uil:instagram"
+						class="py-3 px-7 text-3xl text-white transition bg-red-500 rounded-full hover:bg-white hover:text-red-500" />
+				</a>
+				<a href="https://www.youtube.com/@top_baller">
+					<iconify-icon icon="bi:youtube"
+						class="py-3 px-7 text-3xl text-white transition bg-red-500 rounded-full hover:bg-white hover:text-red-500" />
+				</a>
+				<a href="https://www.tiktok.com/@tiktop_baller">
+					<iconify-icon icon="ic:baseline-tiktok"
+						class="py-3 px-7 text-3xl text-white transition bg-red-500 rounded-full hover:bg-white hover:text-red-500" />
+				</a>
+			</div>
+		</div>
+
+		<!-- YOUTUBE EMBEDDED -->
+		<div class="mt-5 flex justify-center mx-auto">
+			<iframe width="1200" height="700"
+				src="https://www.youtube.com/embed/xFFXTlUCQgk"
+				title="6&#39;5&quot; French Player Comes Down And WREAKS HAVOC!!! (1V1 FOR £1000) LONDON ALL STARS"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 		</div>
 
 		<!-- SCRIPTS FILE -->
