@@ -1,102 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
-<head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/tailwind.css" />
-    <title>Home - Top Baller</title>
-</head>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/tailwind.css" />
+        <title>Home - Top Baller</title>
+    </head>
 
-<body>
-    <header class="w-full md:h-28 h-42 p-3.5 bg-black border-b-gray-400 md:border-b-2">
-        <div class="flex items-center justify-between h-full">
-            <div class="h-20 md:h-full">
-                <img class="h-full" src="./assets/icons/top-baller-logo.webp" alt="Top Baller Logo Dark" />
-            </div>
-
-            <div class="flex items-center gap-2 p-2 text-red-500 border-red-500 border-dotted rounded md:hidden hover:border" id="menu-btn">
-                <iconify-icon icon="mingcute:menu-fill"></iconify-icon>
-                <span class="font-bold font-BarlowSemiCondensed">MENU</span>
-            </div>
-            <!-- DESKTOP NAV LINKS -->
-            <nav class="hidden gap-8 md:flex">
-                <ul class="flex gap-8 text-base text-white uppercase font-Barlow">
-                    <li class="flex items-center text-red-500 transition hover:red-pink-500">
-                        <a href="/">Home</a>
-                    </li>
-                    <li class="transition hover:text-red-500 flex items-center gap-1.5">
-                        <a href="#">Events</a>
-                        <iconify-icon icon="mingcute:down-fill" />
-                    </li>
-                    <li class="flex items-center transition hover:text-red-500">
-                        <a href="#">News</a>
-                    </li>
-                    <li class="flex items-center transition hover:text-red-500">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-                <!-- DESKTOP SOCIAL MEDIA HANDLER -->
-                <div class="flex gap-3">
-                    <a href="https://www.instagram.com/top_ballergram">
-                        <iconify-icon icon="uil:instagram" class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
-                    </a>
-                    <a href="https://www.youtube.com/@top_baller">
-                        <iconify-icon icon="bi:youtube" class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
-                    </a>
-                    <a href="https://www.tiktok.com/@tiktop_baller">
-                        <iconify-icon icon="ic:baseline-tiktok" class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
-                    </a>
+    <body class="h-screen">
+        <header class="w-full lg:h-28 p-3.5 bg-black">
+            <div class="flex items-center justify-between h-full lg:px-10">
+                <div class="h-20 lg:h-full">
+                    <img class="h-full"
+                        src="./assets/icons/top-baller-logo.webp"
+                        alt="Top Baller Logo Dark" />
                 </div>
-            </nav>
-        </div>
-        <!-- MOBILE SOCIAL MEDIA HANDLER -->
-        <br />
-        <div class="flex justify-center w-full gap-3 md:hidden">
-            <a href="https://www.instagram.com/top_ballergram">
-                <iconify-icon icon="uil:instagram" class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+                <div
+                    class="flex items-center gap-2 p-2 text-red-500 border-red-500 border-dotted rounded lg:hidden hover:border"
+                    id="menu-btn">
+                    <iconify-icon icon="mingcute:menu-fill"></iconify-icon>
+                    <span class="font-bold font-BarlowSemiCondensed">MENU</span>
+                </div>
+                <!-- DESKTOP NAV LINKS -->
+                <nav class="hidden gap-8 lg:flex">
+                    <ul
+                        class="flex gap-8 text-base text-white uppercase font-Barlow">
+                        <li
+                            class="flex items-center text-red-500 transition hover:red-pink-500">
+                            <a href="/">Home</a>
+                        </li>
+                        <li
+                            class="transition hover:text-red-500 flex items-center gap-1.5">
+                            <a href="#">Events</a>
+                            <iconify-icon icon="mingcute:down-fill" />
+                            <div class="bg-red-500 flex flex-col uppercase">
+                                <span class="p-10">Next Event</span>
+                                <span class="p-10">Goal Keeper
+                                    Registration</span>
+                            </div>
+                        </li>
+                        <li
+                            class="flex items-center transition hover:text-red-500">
+                            <a href="#">News</a>
+                        </li>
+                        <li
+                            class="flex items-center transition hover:text-red-500">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- DESKTOP SOCIAL MEDIA HANDLER -->
+                    <div class="flex gap-3">
+                        <a href="https://www.instagram.com/top_ballergram">
+                            <iconify-icon icon="uil:instagram"
+                                class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+                        </a>
+                        <a href="https://www.youtube.com/@top_baller">
+                            <iconify-icon icon="bi:youtube"
+                                class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+                        </a>
+                        <a href="https://www.tiktok.com/@tiktop_baller">
+                            <iconify-icon icon="ic:baseline-tiktok"
+                                class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <!-- MOBILE SOCIAL MEDIA HANDLER -->
+            <br />
+            <div class="flex justify-center w-full gap-3 lg:hidden">
+                <a href="https://www.instagram.com/top_ballergram">
+                    <iconify-icon icon="uil:instagram"
+                        class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+                </a>
+                <a href="https://www.youtube.com/@top_baller">
+                    <iconify-icon icon="bi:youtube"
+                        class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+                </a>
+                <a href="https://www.tiktok.com/@tiktop_baller">
+                    <iconify-icon icon="ic:baseline-tiktok"
+                        class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+                </a>
+            </div>
+        </header>
+        <!-- MOBILE NAV LINKS -->
+        <div
+            class="flex-col w-full text-center uppercase transition-all duration-300 bg-white font-Barlow font-extralight hidden"
+            id="nav-links">
+            <a href="/" class="py-4 text-white bg-red-500">Home</a>
+            <div class="group">
+                <span
+                    class="flex items-center justify-center py-4 text-red-500 transition group-hover:bg-red-500 group-hover:text-white">
+                    <a href="#" class="w-9/12">Events</a>
+                    <iconify-icon icon="mingcute:left-fill"
+                        onclick="toggleEvents(this)" />
+                </span>
+                <span
+                    class="items-center justify-center hidden py-4 text-red-500 transition nav-events hover:bg-red-500 hover:text-white">
+                    <a href="#" class="w-9/12">Next Events</a>
+                    <iconify-icon icon="mingcute:left-fill" />
+                </span>
+                <span
+                    class="items-center justify-center hidden py-4 text-red-500 transition nav-events hover:bg-red-500 hover:text-white">
+                    <a href="#" class="w-9/12">Goal Keeper Registration</a>
+                    <iconify-icon icon="mingcute:left-fill" />
+                </span>
+            </div>
+            <a href="#"
+                class="py-4 text-red-500 transition hover:bg-red-500 hover:text-white">
+                News
             </a>
-            <a href="https://www.youtube.com/@top_baller">
-                <iconify-icon icon="bi:youtube" class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+            <a href="#"
+                class="py-4 text-red-500 transition hover:bg-red-500 hover:text-white">
+                Contact
             </a>
-            <a href="https://www.tiktok.com/@tiktop_baller">
-                <iconify-icon icon="ic:baseline-tiktok" class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
-            </a>
-        </div>
-    </header>
-    <!-- MOBILE NAV LINKS -->
-    <div class="flex flex-col w-full text-center uppercase transition bg-white font-Barlow font-extralight md:hidden" id="nav-links">
-        <a href="/" class="py-4 text-white bg-red-500">Home</a>
-        <div class="group">
-            <span class="flex items-center justify-center py-4 text-red-500 transition group-hover:bg-red-500 group-hover:text-white">
-					<a href="#" class="w-9/12">Events</a>
-					<iconify-icon
-						icon="mingcute:left-fill"
-						onclick="toggleEvents(this)"
-					/>
-				</span>
-            <span class="flex items-center justify-center hidden py-4 text-red-500 transition nav-events hover:bg-red-500 hover:text-white">
-					<a href="#" class="w-9/12">Next Events</a>
-					<iconify-icon icon="mingcute:left-fill" />
-				</span>
-            <span class="flex items-center justify-center hidden py-4 text-red-500 transition nav-events hover:bg-red-500 hover:text-white">
-					<a href="#" class="w-9/12">Goal Keeper Registration</a>
-					<iconify-icon icon="mingcute:left-fill" />
-				</span>
         </div>
 
-        <a href="#" class="py-4 text-red-500 transition hover:bg-red-500 hover:text-white">
-				News
-			</a>
-        <a href="#" class="py-4 text-red-500 transition hover:bg-red-500 hover:text-white">
-				Contact
-			</a>
-    </div>
-
-    <div class="w-full h-full"></div>
-
-    <script src="dist/script.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-</body>
+        <!-- SCRIPTs FILE -->
+        <script src="dist/script.js"></script>
+        <script
+            src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    </body>
 
 </html>

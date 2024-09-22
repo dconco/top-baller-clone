@@ -25,12 +25,16 @@ function toggleEvents(e: HTMLDivElement) {
    if (e.getAttribute("icon") === "mingcute:left-fill") {
       e.setAttribute("icon", "mingcute:down-fill");
 
-      for (let i = 0; i < navEvents.length; i++)
+      for (let i = 0; i < navEvents.length; i++) {
+         navEvents[i].classList.add("flex");
          navEvents[i].classList.remove("hidden");
+      }
    } else {
       e.setAttribute("icon", "mingcute:left-fill");
 
-      for (let i = 0; i < navEvents.length; i++)
+      for (let i = 0; i < navEvents.length; i++) {
          navEvents[i].classList.add("hidden");
+         navEvents[i].classList.remove("flex");
+      }
    }
 }
