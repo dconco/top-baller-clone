@@ -1,0 +1,7 @@
+{
+	"name": "top-baller",
+	"main": "tailwind.config.js",
+	"scripts": {
+		"start": "tailwindcss -i styles/style.css -o styles/tailwind.css --watch"
+	}
+}
