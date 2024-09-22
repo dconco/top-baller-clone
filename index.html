@@ -8,7 +8,7 @@
 		<title>Home - Top Baller</title>
 	</head>
 
-	<body class="h-screen">
+	<body class="h-screen selection:bg-red-500">
 		<header class="w-full lg:h-28 p-3.5 bg-black">
 			<div class="flex items-center justify-between h-full lg:px-10">
 				<div class="h-20 lg:h-full">
@@ -111,9 +111,32 @@
 		</div>
 
 		<!-- MAIN -->
-		<div
-			class="w-full lg:h-[calc(100%-7rem)] h-[calc(100%-11rem)] before:block before:size-full before:bg-[#00000060]"
-			style="background: no-repeat center center url('/assets/cover.webp'); background-size:cover"></div>
+		<div class="relative inset-0 lg:h-[calc(100%-7rem)] h-[calc(100%-11rem)]">
+			<div class="absolute inset-0 bg-cover bg-center"
+				style="background: no-repeat center center url('/assets/cover.webp'); background-size:cover"></div>
+			<div class="absolute inset-0 bg-black opacity-50"></div>
+
+			<div
+				class="relative h-full z-10 flex flex-col justify-around items-center text-center gap-5 pt-10">
+				<object data="./assets/dark-bg.svg" type="image/svg+xml"
+					class="max-h-[60%]"></object>
+				<div class="min-h-[20%] mt-5">
+					<span class="font-BarlowSemiCondensed text-white text-2xl text-center">
+						YOU SAY YOU'RE A TOP BALLER. PROVE IT. END THE TALKING.
+					</span>
+					<br>
+					<br>
+
+					<a href="#">
+						<button
+							class="flex mx-auto items-center justify-center gap-2 cursor-pointer py-3 px-7 transition bg-red-500 hover:bg-red-400 font-BarlowSemiCondensed text-white">
+							PLAY
+							<iconify-icon icon="icon-park-outline:arrow-right" />
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
 
 		<!-- SCRIPTS FILE -->
 		<script src="dist/script.js"></script>
