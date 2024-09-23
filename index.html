@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,31 +8,42 @@
 	</head>
 
 	<body class="h-screen selection:bg-red-500 bg-[#140303]">
-		<header class="w-full lg:h-28 p-3.5">
-			<div class="flex items-center justify-between h-full lg:px-10">
-				<div class="h-20 lg:h-full">
-					<img class="h-full" src="./assets/icons/top-baller-logo.webp"
-						alt="Top Baller Logo Dark" />
+		<header class="w-full md:h-28 p-3.5">
+			<div class="flex items-center justify-between h-full md:px-10">
+				<div class="h-20 md:h-full">
+					<a href="/">
+						<img
+							class="h-full"
+							src="./assets/icons/top-baller-logo.webp"
+							alt="Top Baller Logo Dark"
+						/>
+					</a>
 				</div>
 				<div
-					class="flex items-center gap-2 p-2 text-red-500 border-red-500 border-dotted rounded lg:hidden hover:border"
-					id="menu-btn">
+					class="flex items-center gap-2 p-2 text-red-500 border-red-500 border-dotted rounded md:hidden hover:border"
+					id="menu-btn"
+				>
 					<iconify-icon icon="mingcute:menu-fill"></iconify-icon>
 					<span class="font-bold font-BarlowSemiCondensed">MENU</span>
 				</div>
 				<!-- DESKTOP NAV LINKS -->
-				<nav class="hidden gap-8 lg:flex">
-					<ul class="flex gap-8 text-base text-white uppercase font-Barlow">
-						<li class="flex items-center text-red-500 transition hover:red-pink-500">
+				<nav class="hidden gap-8 md:flex">
+					<ul
+						class="flex gap-8 text-base text-white uppercase font-Barlow"
+					>
+						<li
+							class="flex items-center text-red-500 transition hover:red-pink-500"
+						>
 							<a href="/">Home</a>
 						</li>
-						<li class="transition hover:text-red-500 flex items-center gap-1.5">
+						<li
+							class="transition hover:text-red-500 flex items-center gap-1.5"
+						>
 							<a href="#">Events</a>
 							<iconify-icon icon="mingcute:down-fill" />
 							<div class="bg-red-500 flex flex-col uppercase">
 								<span class="p-10">Next Event</span>
-								<span class="p-10">Goal Keeper
-									Registration</span>
+								<span class="p-10">Goal Keeper Registration</span>
 							</div>
 						</li>
 						<li class="flex items-center transition hover:text-red-500">
@@ -46,90 +56,124 @@
 					<!-- DESKTOP SOCIAL MEDIA HANDLER -->
 					<div class="flex gap-3">
 						<a href="https://www.instagram.com/top_ballergram">
-							<iconify-icon icon="uil:instagram"
-								class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+							<iconify-icon
+								icon="uil:instagram"
+								class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
+							/>
 						</a>
 						<a href="https://www.youtube.com/@top_baller">
-							<iconify-icon icon="bi:youtube"
-								class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+							<iconify-icon
+								icon="bi:youtube"
+								class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
+							/>
 						</a>
 						<a href="https://www.tiktok.com/@tiktop_baller">
-							<iconify-icon icon="ic:baseline-tiktok"
-								class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+							<iconify-icon
+								icon="ic:baseline-tiktok"
+								class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
+							/>
 						</a>
 					</div>
 				</nav>
 			</div>
 			<!-- MOBILE SOCIAL MEDIA HANDLER -->
 			<br />
-			<div class="flex justify-center w-full gap-3 lg:hidden">
+			<div class="flex justify-center w-full gap-3 md:hidden">
 				<a href="https://www.instagram.com/top_ballergram">
-					<iconify-icon icon="uil:instagram"
-						class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+					<iconify-icon
+						icon="uil:instagram"
+						class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
+					/>
 				</a>
 				<a href="https://www.youtube.com/@top_baller">
-					<iconify-icon icon="bi:youtube"
-						class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+					<iconify-icon
+						icon="bi:youtube"
+						class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
+					/>
 				</a>
 				<a href="https://www.tiktok.com/@tiktop_baller">
-					<iconify-icon icon="ic:baseline-tiktok"
-						class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white" />
+					<iconify-icon
+						icon="ic:baseline-tiktok"
+						class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
+					/>
 				</a>
 			</div>
 		</header>
 		<!-- MOBILE NAV LINKS -->
 		<div
 			class="flex-col w-full text-center uppercase transition-all duration-300 bg-white font-Barlow font-extralight hidden"
-			id="nav-links">
+			id="nav-links"
+		>
 			<a href="/" class="py-4 text-white bg-red-500">Home</a>
 			<div class="group">
 				<span
-					class="flex items-center justify-center py-4 text-red-500 transition group-hover:bg-red-500 group-hover:text-white">
+					class="flex items-center justify-center py-4 text-red-500 transition group-hover:bg-red-500 group-hover:text-white"
+				>
 					<a href="#" class="w-9/12">Events</a>
-					<iconify-icon icon="mingcute:left-fill"
-						onclick="toggleEvents(this)" />
+					<iconify-icon
+						icon="mingcute:left-fill"
+						onclick="toggleEvents(this)"
+					/>
 				</span>
 				<span
-					class="items-center justify-center hidden py-4 text-red-500 transition nav-events hover:bg-red-500 hover:text-white">
+					class="items-center justify-center hidden py-4 text-red-500 transition nav-events hover:bg-red-500 hover:text-white"
+				>
 					<a href="#" class="w-9/12">Next Events</a>
 					<iconify-icon icon="mingcute:left-fill" />
 				</span>
 				<span
-					class="items-center justify-center hidden py-4 text-red-500 transition nav-events hover:bg-red-500 hover:text-white">
+					class="items-center justify-center hidden py-4 text-red-500 transition nav-events hover:bg-red-500 hover:text-white"
+				>
 					<a href="#" class="w-9/12">Goal Keeper Registration</a>
 					<iconify-icon icon="mingcute:left-fill" />
 				</span>
 			</div>
-			<a href="#"
-				class="py-4 text-red-500 transition hover:bg-red-500 hover:text-white">
+			<a
+				href="#"
+				class="py-4 text-red-500 transition hover:bg-red-500 hover:text-white"
+			>
 				News
 			</a>
-			<a href="#"
-				class="py-4 text-red-500 transition hover:bg-red-500 hover:text-white">
+			<a
+				href="#"
+				class="py-4 text-red-500 transition hover:bg-red-500 hover:text-white"
+			>
 				Contact
 			</a>
 		</div>
 
 		<!-- MAIN COVER -->
 		<div class="relative inset-0 h-[calc(100%-7rem)]">
-			<div class="absolute inset-0 bg-cover bg-center"
-				style="background: no-repeat center center url('/assets/cover.webp'); background-size:cover"></div>
+			<div
+				class="absolute inset-0 bg-cover bg-center"
+				style="
+					background: no-repeat center center url('/assets/cover.webp');
+					background-size: cover;
+				"
+			></div>
 			<div class="absolute inset-0 bg-black opacity-50"></div>
 
 			<div
-				class="relative h-full z-10 flex flex-col justify-center items-center text-center gap-5">
-				<object data="./assets/dark-bg.svg" type="image/svg+xml"
-					class="h-[60%] max-w-[70%]"></object>
+				class="relative h-full z-10 flex flex-col justify-center items-center text-center gap-5"
+			>
+				<object
+					data="./assets/dark-bg.svg"
+					type="image/svg+xml"
+					class="h-[60%] max-w-[70%]"
+				></object>
 				<div class="min-h-[20%] md:mt-5">
-					<span class="font-BarlowSemiCondensed text-white text-3xl text-center">
+					<span
+						class="font-BarlowSemiCondensed text-white text-3xl text-center"
+					>
 						YOU SAY YOU'RE A TOP BALLER. PROVE IT. END THE TALKING.
 					</span>
-					<br>
-					<br>
+					<br />
+					<br />
 
 					<a href="#">
 						<button
-							class="flex mx-auto items-center justify-center gap-2 cursor-pointer py-3 px-7 transition bg-red-500 hover:bg-red-400 font-BarlowSemiCondensed text-white">
+							class="flex mx-auto items-center justify-center gap-2 cursor-pointer py-3 px-7 transition bg-red-500 hover:bg-red-400 font-BarlowSemiCondensed text-white"
+						>
 							PLAY
 							<iconify-icon icon="icon-park-outline:arrow-right" />
 						</button>
@@ -140,63 +184,161 @@
 
 		<div class="mt-12 text-center mx-auto">
 			<span class="uppercase font-BarlowSemiCondensed text-white text-2xl">
-				Never miss any of the action and find out about events first. Follow us on
-				our socials:
+				Never miss any of the action and find out about events first. Follow
+				us on our socials:
 			</span>
 
 			<div class="mt-10 flex gap-3 justify-center">
 				<a href="https://www.instagram.com/top_ballergram">
-					<iconify-icon icon="uil:instagram"
-						class="py-3 px-7 text-3xl text-white transition bg-red-500 rounded-full hover:bg-white hover:text-red-500" />
+					<iconify-icon
+						icon="uil:instagram"
+						class="py-3 px-7 text-3xl text-white transition bg-red-500 rounded-full hover:bg-white hover:text-red-500"
+					/>
 				</a>
 				<a href="https://www.youtube.com/@top_baller">
-					<iconify-icon icon="bi:youtube"
-						class="py-3 px-7 text-3xl text-white transition bg-red-500 rounded-full hover:bg-white hover:text-red-500" />
+					<iconify-icon
+						icon="bi:youtube"
+						class="py-3 px-7 text-3xl text-white transition bg-red-500 rounded-full hover:bg-white hover:text-red-500"
+					/>
 				</a>
 				<a href="https://www.tiktok.com/@tiktop_baller">
-					<iconify-icon icon="ic:baseline-tiktok"
-						class="py-3 px-7 text-3xl text-white transition bg-red-500 rounded-full hover:bg-white hover:text-red-500" />
+					<iconify-icon
+						icon="ic:baseline-tiktok"
+						class="py-3 px-7 text-3xl text-white transition bg-red-500 rounded-full hover:bg-white hover:text-red-500"
+					/>
 				</a>
 			</div>
 		</div>
 
 		<!-- YOUTUBE EMBEDDED -->
-		<div class="mt-5 flex justify-center mx-auto">
-			<iframe width="1200" height="700"
+		<div class="mt-5 p-3 flex justify-center mx-auto">
+			<iframe
+				width="1200"
+				height="700"
 				src="https://www.youtube.com/embed/xFFXTlUCQgk"
-				title="6&#39;5&quot; French Player Comes Down And WREAKS HAVOC!!! (1V1 FOR £1000) LONDON ALL STARS"
+				title='6&#39;5" French Player Comes Down And WREAKS HAVOC!!! (1V1 FOR £1000) LONDON ALL STARS'
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
 		</div>
 
 		<div class="flex flex-col justify-center mt-28 md:p-20 p-7">
-			<object data="./assets/icons/top-baller-wall-of-fame.svg"
-				type="image/svg+xml" class="w-52 mx-auto mb-7"></object>
+			<object
+				data="./assets/icons/top-baller-wall-of-fame.svg"
+				type="image/svg+xml"
+				class="w-52 mx-auto mb-7"
+			></object>
 			<span
-				class="text-white md:text-4xl text-3xl text-center font-BarlowSemiCondensed">
+				class="text-[#EBE7D9] md:text-4xl text-3xl text-center font-BarlowSemiCondensed"
+			>
 				WALL OF FAME: LONDON SERIES
 			</span>
 			<hr class="border-[1.5px] border-red-500 mt-6" />
 		</div>
 
-		<div class="md:mt-[-50px] px-20">
-			<div class="flex flex-wrap justify-evenly gap-20">
-				<div class="flex flex-col items-center gap-5">
+		<div class="md:mt-[-50px] px-10">
+			<div class="flex flex-wrap justify-evenly gap-14">
+				<div class="flex flex-col items-center gap-5 md:max-w-[40%]">
 					<span
-						class="text-white font-BarlowSemiCondensed md:text-3xl text-2xl text-center">
-						<span class="text-red-500">WEST LONDON TOP BALLER: </span> ALTAN AYDIN
+						class="text-[#EBE7D9] font-BarlowSemiCondensed md:text-3xl text-2xl text-center break-words uppercase"
+					>
+						<span class="text-red-500">WEST LONDON TOP BALLER: </span>
+						ALTAN AYDIN
 					</span>
-					<div class="flex flex-wrap gap-10 items-center">
+					<div class="flex flex-wrap gap-10 items-center justify-center">
 						<img
 							src="https://topballer.co/wp-content/uploads/2023/04/Altan-Baller.png"
-							class="max-w-48">
+							class="max-w-48"
+						/>
 						<div class="border-l-[3px] border-red-500 pl-4 py-2">
-							<dd class="text-white break-words">
-								<span class="font-BarlowSemiCondensed">Bio:</span> Turkish, bagsman, no
-								nonsense, striker.
-								<br>
+							<dd class="text-[#EBE7D9] break-words">
+								<span class="font-BarlowSemiCondensed">Bio:</span>
+								Turkish, bagsman, no nonsense, striker.
+								<br />
 								<span class="font-BarlowSemiCondensed">Age:</span> 22
+								<br />
+								<span class="font-BarlowSemiCondensed">Insta:</span>
+								@Aaltanaydin
+							</dd>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-center gap-5 md:max-w-[40%]">
+					<span
+						class="text-[#EBE7D9] font-BarlowSemiCondensed md:text-3xl text-2xl text-center break-words uppercase"
+					>
+						<span class="text-red-500">NORTH LONDON TOP BALLER: </span>
+						JOSEPH DIOMANDE
+					</span>
+					<div class="flex flex-wrap gap-10 items-center justify-center">
+						<img
+							src="https://topballer.co/wp-content/uploads/2023/05/Joseph-Baller.png"
+							class="max-w-48"
+						/>
+						<div class="border-l-[3px] border-red-500 pl-4 py-2">
+							<dd class="text-[#EBE7D9] break-words">
+								<span class="font-BarlowSemiCondensed">Bio:</span>
+								Goal getter, beast. la puissance, striker.
+								<br />
+								<span class="font-BarlowSemiCondensed">Age:</span> 28
+								<br />
+								<span class="font-BarlowSemiCondensed">Insta:</span>
+								@jodioms
+							</dd>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-center gap-5 md:max-w-[40%]">
+					<span
+						class="text-[#EBE7D9] font-BarlowSemiCondensed md:text-3xl text-2xl text-center break-words uppercase"
+					>
+						<span class="text-red-500">EAST LONDON TOP BALLER: </span>
+						DAYO SANTANNA
+					</span>
+					<div class="flex flex-wrap gap-10 items-center justify-center">
+						<img
+							src="https://topballer.co/wp-content/uploads/2023/06/Dayo-Santanna.png"
+							class="max-w-48"
+						/>
+						<div class="border-l-[3px] border-red-500 pl-4 py-2">
+							<dd class="text-[#EBE7D9] break-words">
+								<span class="font-BarlowSemiCondensed">Bio:</span>
+								Cold, clinical, decisive, striker.
+								<br />
+								<span class="font-BarlowSemiCondensed">Age:</span> 25
+								<br />
+								<span class="font-BarlowSemiCondensed">Insta:</span>
+								@dayo_santanna
+							</dd>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-center gap-5 md:max-w-[40%]">
+					<span
+						class="text-[#EBE7D9] font-BarlowSemiCondensed md:text-3xl text-2xl text-center break-words uppercase"
+					>
+						<span class="text-red-500">SOUTH LONDON TOP BALLER: </span>
+						ETHAN OKE
+					</span>
+					<div class="flex flex-wrap gap-10 items-center justify-center">
+						<img
+							src="https://topballer.co/wp-content/uploads/2023/07/South-London-Winner.png"
+							class="max-w-48"
+						/>
+						<div class="border-l-[3px] border-red-500 pl-4 py-2">
+							<dd class="text-[#EBE7D9] break-words">
+								<span class="font-BarlowSemiCondensed">Bio:</span>
+								Sleek, solid, humble, winger.
+								<br />
+								<span class="font-BarlowSemiCondensed">Age:</span> 22
+								<br />
+								<span class="font-BarlowSemiCondensed">Insta:</span>
+								@ethan.oke
 							</dd>
 						</div>
 					</div>
@@ -206,8 +348,6 @@
 
 		<!-- SCRIPTS FILE -->
 		<script src="dist/script.js"></script>
-		<script
-			src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+		<script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 	</body>
-
 </html>

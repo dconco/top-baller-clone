@@ -1,40 +1,40 @@
-const menuBtn: HTMLElement = document.getElementById("menu-btn")!;
-const navLinks: HTMLElement = document.getElementById("nav-links")!;
+const menuBtn: HTMLElement = document.getElementById('menu-btn')!
+const navLinks: HTMLElement = document.getElementById('nav-links')!
 const navEvents: HTMLCollectionOf<Element> =
-   document.getElementsByClassName("nav-events")!;
+	document.getElementsByClassName('nav-events')!
 
 menuBtn.onclick = function () {
-   if (navLinks.classList.contains("hidden")) {
-      navLinks.classList.add("flex");
-      navLinks.classList.remove("hidden");
+	if (navLinks.classList.contains('hidden')) {
+		navLinks.classList.add('flex')
+		navLinks.classList.remove('hidden')
 
-      setTimeout(() => {
-         navLinks.style.opacity = "1";
-      });
-   } else {
-      navLinks.style.opacity = "0";
+		setTimeout(() => {
+			navLinks.style.opacity = '1'
+		})
+	} else {
+		navLinks.style.opacity = '0'
 
-      setTimeout(() => {
-         navLinks.classList.add("hidden");
-         navLinks.classList.remove("flex");
-      });
-   }
-};
+		setTimeout(() => {
+			navLinks.classList.add('hidden')
+			navLinks.classList.remove('flex')
+		})
+	}
+}
 
 function toggleEvents(e: HTMLDivElement) {
-   if (e.getAttribute("icon") === "mingcute:left-fill") {
-      e.setAttribute("icon", "mingcute:down-fill");
+	if (e.getAttribute('icon') === 'mingcute:left-fill') {
+		e.setAttribute('icon', 'mingcute:down-fill')
 
-      for (let i = 0; i < navEvents.length; i++) {
-         navEvents[i].classList.add("flex");
-         navEvents[i].classList.remove("hidden");
-      }
-   } else {
-      e.setAttribute("icon", "mingcute:left-fill");
+		for (let i = 0; i < navEvents.length; i++) {
+			navEvents[i].classList.add('flex')
+			navEvents[i].classList.remove('hidden')
+		}
+	} else {
+		e.setAttribute('icon', 'mingcute:left-fill')
 
-      for (let i = 0; i < navEvents.length; i++) {
-         navEvents[i].classList.add("hidden");
-         navEvents[i].classList.remove("flex");
-      }
-   }
+		for (let i = 0; i < navEvents.length; i++) {
+			navEvents[i].classList.add('hidden')
+			navEvents[i].classList.remove('flex')
+		}
+	}
 }
