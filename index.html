@@ -39,7 +39,7 @@
 						<li
 							class="transition hover:text-red-500 flex items-center gap-1.5"
 						>
-							<a href="#">Events</a>
+							<a href="events.html">Events</a>
 							<iconify-icon icon="mingcute:down-fill" />
 							<div class="bg-red-500 flex flex-col uppercase">
 								<span class="p-10">Next Event</span>
@@ -47,10 +47,10 @@
 							</div>
 						</li>
 						<li class="flex items-center transition hover:text-red-500">
-							<a href="#">News</a>
+							<a href="news.html">News</a>
 						</li>
 						<li class="flex items-center transition hover:text-red-500">
-							<a href="#">Contact</a>
+							<a href="contact.html">Contact</a>
 						</li>
 					</ul>
 					<!-- DESKTOP SOCIAL MEDIA HANDLER -->
@@ -109,7 +109,7 @@
 				<span
 					class="flex items-center justify-center py-4 text-red-500 transition group-hover:bg-red-500 group-hover:text-white"
 				>
-					<a href="#" class="w-9/12">Events</a>
+					<a href="events.html" class="w-9/12">Events</a>
 					<iconify-icon
 						icon="mingcute:left-fill"
 						onclick="toggleEvents(this)"
@@ -129,13 +129,13 @@
 				</span>
 			</div>
 			<a
-				href="#"
+				href="news.html"
 				class="py-4 text-red-500 transition hover:bg-red-500 hover:text-white"
 			>
 				News
 			</a>
 			<a
-				href="#"
+				href="contact.html"
 				class="py-4 text-red-500 transition hover:bg-red-500 hover:text-white"
 			>
 				Contact
@@ -374,7 +374,7 @@
 				<div class="text-sm">
 					<p class="mb-2">Name</p>
 					<div class="flex flex-wrap w-full gap-3">
-						<div>
+						<div class="md:w-auto w-full">
 							<input
 								type="text"
 								id="f_name"
@@ -383,7 +383,7 @@
 							<br />
 							<label for="f_name">First</label>
 						</div>
-						<div>
+						<div class="md:w-auto w-full">
 							<input
 								type="text"
 								id="l_name"
@@ -411,60 +411,62 @@
 			</div>
 		</div>
 
-		<div class="w-full py-7 md:px-10 px-5 bg-black">
-			<div class="flex flex-wrap gap-10 justify-around items-center">
-				<div class="text-center font-Barlow">
-					<a href="#" class="text-red-500">1V1 Rulebook</a>
-					<br />
-					<a href="#" class="text-red-500">About</a>
-					<br />
-					<a href="#" class="text-red-500">Contact</a>
-					<br />
-					<a href="#" class="text-red-500">Privacy Policy</a>
-					<br />
-					<a href="#" class="text-red-500">Submit Content</a>
-					<br />
-					<a href="#" class="text-red-500">Academy</a>
-				</div>
+		<footer>
+			<div class="w-full py-7 md:px-10 px-5 bg-black">
+				<div class="flex flex-wrap gap-10 justify-around items-center">
+					<div class="text-center font-Barlow">
+						<a href="#" class="text-red-500">1V1 Rulebook</a>
+						<br />
+						<a href="#" class="text-red-500">About</a>
+						<br />
+						<a href="#" class="text-red-500">Contact</a>
+						<br />
+						<a href="#" class="text-red-500">Privacy Policy</a>
+						<br />
+						<a href="#" class="text-red-500">Submit Content</a>
+						<br />
+						<a href="#" class="text-red-500">Academy</a>
+					</div>
 
-				<div class="flex gap-3">
-					<a href="https://www.instagram.com/top_ballergram">
-						<iconify-icon
-							icon="uil:instagram"
-							class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
-						/>
-					</a>
-					<a href="https://www.youtube.com/@top_baller">
-						<iconify-icon
-							icon="bi:youtube"
-							class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
-						/>
-					</a>
-					<a href="https://www.tiktok.com/@tiktop_baller">
-						<iconify-icon
-							icon="ic:baseline-tiktok"
-							class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
-						/>
-					</a>
-				</div>
+					<div class="flex gap-3">
+						<a href="https://www.instagram.com/top_ballergram">
+							<iconify-icon
+								icon="uil:instagram"
+								class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
+							/>
+						</a>
+						<a href="https://www.youtube.com/@top_baller">
+							<iconify-icon
+								icon="bi:youtube"
+								class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
+							/>
+						</a>
+						<a href="https://www.tiktok.com/@tiktop_baller">
+							<iconify-icon
+								icon="ic:baseline-tiktok"
+								class="p-2 text-3xl text-red-500 transition bg-white rounded-full hover:bg-red-500 hover:text-white"
+							/>
+						</a>
+					</div>
 
-				<div>
-					<span class="font-BarlowSemiCondensed text-white text-lg"
-						>LATEST NEWS:</span
-					>
-					<br />
-					<p class="text-red-500 font-Barlow">
-						TOP BALLER SUMMER BALL OUT
-					</p>
+					<div>
+						<span class="font-BarlowSemiCondensed text-white text-lg"
+							>LATEST NEWS:</span
+						>
+						<br />
+						<p class="text-red-500 font-Barlow">
+							TOP BALLER SUMMER BALL OUT
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="p-3 bg-red-500"></div>
+			<div class="p-3 bg-red-500"></div>
 
-		<div class="p-5 text-center bg-white font-Barlow text-base">
-			<p>Copyright © 2024 TOP BALLER</p>
-		</div>
+			<div class="p-5 text-center bg-white font-Barlow text-base">
+				<p>Copyright © 2024 TOP BALLER</p>
+			</div>
+		</footer>
 
 		<!-- SCRIPTS FILE -->
 		<script src="dist/script.js"></script>
